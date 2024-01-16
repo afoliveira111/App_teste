@@ -29,4 +29,9 @@ class MainActivity : AppCompatActivity() {
         super.onStop()
         println("onStop")
     }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        println("onDestroy")
+    }
 }
