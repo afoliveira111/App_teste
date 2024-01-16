@@ -20,4 +20,8 @@ class MainActivity : AppCompatActivity() {
         println("onResume")
     }
 
+    override fun onPause() {
+        super.onPause()
+        println("onPause")
+    }
 }
