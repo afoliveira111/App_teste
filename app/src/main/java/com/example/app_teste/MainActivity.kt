@@ -24,4 +24,9 @@ class MainActivity : AppCompatActivity() {
         super.onPause()
         println("onPause")
     }
+
+    override fun onStop() {
+        super.onStop()
+        println("onStop")
+    }
 }
