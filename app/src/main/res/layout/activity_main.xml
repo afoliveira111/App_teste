@@ -28,5 +28,27 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"  />
 
+    <TextView
+        android:id="@+id/resultado2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="O resultado 2 é"
+        android:textSize="30sp"
+        android:layout_margin="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@id/resultado2" />
+
+    <Button
+        android:id="@+id/botao2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Executar"
+        app:layout_constraintTop_toBottomOf="@id/resultado2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"  />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
