@@ -14,4 +14,10 @@ class MainActivity : AppCompatActivity() {
         super.onStart()
         println("onStart")
     }
+
+    override fun onResume() {
+        super.onResume()
+        println("onResume")
+    }
+
 }
