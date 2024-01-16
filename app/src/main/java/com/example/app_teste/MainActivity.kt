@@ -2,36 +2,16 @@ package com.example.app_teste
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
+import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        println("onCreate")
+        val button = findViewById<Button>(R.id.botao)
+        val resultado = findViewById<TextView>(R.id.resultado)
+        resultado.text = "Testando"
     }
 
-    override fun onStart() {
-        super.onStart()
-        println("onStart")
-    }
-
-    override fun onResume() {
-        super.onResume()
-        println("onResume")
-    }
-
-    override fun onPause() {
-        super.onPause()
-        println("onPause")
-    }
-
-    override fun onStop() {
-        super.onStop()
-        println("onStop")
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        println("onDestroy")
-    }
 }
