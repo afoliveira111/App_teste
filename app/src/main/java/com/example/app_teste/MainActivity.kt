@@ -12,21 +12,20 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val button = findViewById<Button>(R.id.botao)
-        val button2 = findViewById<Button>(R.id.botao2)
+        val botaoSomar = findViewById<Button>(R.id.botaoSomar)
+        val botaoSubtrair = findViewById<Button>(R.id.botaoSubtrair)
         val resultado = findViewById<TextView>(R.id.resultado)
 
-        button.setOnClickListener {
+        botaoSomar.setOnClickListener {
             contador = contador + 1
             resultado.text = "Valor : ${contador}"
 
-         button2.setOnClickListener {
-             contador = contador -1
-             resultado.text = "Valor : ${contador}"
-         }
+        }
+        botaoSubtrair.setOnClickListener {
+            contador = contador - 1
+            resultado.text = "Valor : ${contador}"
 
         }
-
     }
-
 }
+
